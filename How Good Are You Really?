@@ -1,0 +1,27 @@
+/* Problem: There was a test in your class and you passed it. Congratulations!
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+Return True if you're better, else False!
+*/
+
+//Solution:
+function betterThanAverage(classPoints, yourPoints) {
+ //Add my points to the array of points and create a variable for the sum
+  classPoints.push(yourPoints);
+  let sum = 0;
+//Cycle through the array and add all the points together
+ for (let i = 0; i < classPoints.length; i++) {
+   sum += classPoints[i];
+}
+//Find the average  
+  sum = sum/classPoints.length
+//Figure out if I scored higher than the address  
+  if (sum < yourPoints){
+    return true
+  } else {
+    return false
+  }
+
+}

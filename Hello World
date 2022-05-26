@@ -1,0 +1,8 @@
+/* Problem: Log 'Hello World!' to the console.
+*/
+
+//Solution:
+function helloWorld() {
+ const str = "Hello World!";
+  console.log(str)
+} 

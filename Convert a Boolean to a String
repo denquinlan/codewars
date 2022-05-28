@@ -1,0 +1,7 @@
+/* Problem: Convert a Boolean to a string
+*/
+
+//Solution:
+function booleanToString(b){
+  return b.toString()
+}

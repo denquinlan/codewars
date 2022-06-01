@@ -1,0 +1,15 @@
+/* Problem: Build a function that returns an array of integers from n to 1 where n>0.
+*/
+
+//Solution:
+const reverseSeq = n => {
+  //create an array from 0-the number before n then reverse it
+  let reverse = Array.from(Array(n).keys()).reverse()
+  //take the zero off of the array
+  let pop = reverse.pop()
+  //add n to the front of the array
+  reverse.unshift(n)
+  
+  
+  return reverse
+  }

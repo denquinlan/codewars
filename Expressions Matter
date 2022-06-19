@@ -1,0 +1,22 @@
+/* Problem: Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+*/
+
+//Solution: 
+function expressionMatter(a, b, c) {
+const valOne = a * (b + c)
+const valTwo = a * b * c 
+const valThree = a + b * c 
+const valFour = (a + b) * c 
+const valFive = a + b + c
+
+if (valOne >= valTwo && valOne >= valThree && valOne >= valFour && valOne >= valFive){
+  return valOne
+} else if (valTwo >= valOne && valTwo >= valThree && valTwo >= valFour && valTwo >= valFive){
+  return valTwo
+} else if (valThree >= valOne && valThree >= valTwo && valThree >= valFour && valThree >= valFive){
+  return valThree
+} else if (valFour >= valOne && valFour >= valTwo && valFour >= valThree && valFour >= valFive){
+  return valFour
+} else if (valFive >= valOne && valFive >= valTwo && valFive >= valThree && valFive >= valFour){
+  return valFive
+}
